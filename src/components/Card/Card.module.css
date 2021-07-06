@@ -1,0 +1,53 @@
+.card {
+  height: 110px;
+  width: 200px;
+  background-color: #141414;
+  margin: auto;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.title {
+  height: 30px;
+  width: 200px;
+  background-color: #141414;
+  margin: auto;
+  padding-left: 10px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.action {
+  height: 30px;
+  width: 200px;
+  background-color: #141414;
+  margin: auto;
+  box-shadow: 2px 0px 10px 2px #303030;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: stretch;
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 50%;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  cursor: pointer;
+}
+
+.play {
+  border-radius: 0px 0px 0px 10px;
+  background-color: #c51935;
+}
+.info {
+  border-radius: 0px 0px 10px 0px;
+  background-color: #313131;
+}
+
+@media screen and (max-width: 540px) {
+  .card,
+  .action,
+  .title {
+    width: 250px;
+  }
+}
