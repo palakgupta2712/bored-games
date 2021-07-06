@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import EntryScreen from "../components/EntryScreen/EntryScreen";
+import Navbar from "../components/Navbar/Navbar";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,7 +13,7 @@ function Home() {
   return (
     <React.Fragment>
       {isLoading && <EntryScreen />}
-      {!isLoading && "BORED."}
+      {!isLoading && <Navbar />}
     </React.Fragment>
   );
 }
