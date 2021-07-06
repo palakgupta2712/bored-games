@@ -1,0 +1,33 @@
+.root {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  letter-spacing: 15px;
+  font-size: 72px;
+  animation-name: example;
+  animation-duration: 5s;
+  transition: ease-in 450ms;
+  background-color: yellow;
+  padding: 10px;
+}
+
+@keyframes example {
+  0% {
+    transform: rotate(90deg);
+    background-color: transparent;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+}
