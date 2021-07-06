@@ -1,10 +1,10 @@
 import React from "react";
-import ComingSoon from "../components/ComingSoon/ComingSoon";
+import Navbar from "../components/Navbar/Navbar";
 
 function TicTacToe() {
   return (
     <React.Fragment>
-      <ComingSoon />
+      <Navbar logo="TIC-TAC-TOE" />
     </React.Fragment>
   );
 }

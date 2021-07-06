@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 
-function Navbar() {
+function Navbar({ logo }) {
   return (
     <React.Fragment>
       <div className={styles.nav}>
-        <h3 className={styles.logo}>BORED.</h3>
+        <h3 className={styles.logo}>{logo}</h3>
       </div>
     </React.Fragment>
   );

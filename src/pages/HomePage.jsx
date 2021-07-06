@@ -16,7 +16,7 @@ function Home() {
       {isLoading && <EntryScreen />}
       {!isLoading && (
         <>
-          <Navbar />
+          <Navbar logo="BORED." />
           <Content />
         </>
       )}
