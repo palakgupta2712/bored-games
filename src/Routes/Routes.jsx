@@ -6,6 +6,7 @@ import CardMatching from "../pages/CardMatching";
 import RockPaperScissors from "../pages/RockPaperScissors";
 import Hangman from "../pages/Hangman";
 import TriviaQuiz from "../pages/TriviaQuiz";
+import FloatingButton from "../components/FloatingButton/FloatingButton";
 
 function Routes() {
   return (
@@ -23,6 +24,7 @@ function Routes() {
           <Route path="/hangman" exact component={Hangman} />
           <Route path="/trivia-quiz" exact component={TriviaQuiz} />
         </Switch>
+        <FloatingButton />
       </BrowserRouter>
     </React.Fragment>
   );
