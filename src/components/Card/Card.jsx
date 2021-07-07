@@ -8,7 +8,7 @@ function Card({ title }) {
       <div className={styles.card}></div>
       <div className={styles.title}>{title}</div>
       <div className={styles.action}>
-        <button className={styles.play}>
+        <button className={`${styles.play} ${styles.button}`}>
           <Link
             to={`/${title.toLowerCase().split(" ").join("-")}`}
             className={styles.link}
@@ -16,7 +16,7 @@ function Card({ title }) {
             Play
           </Link>
         </button>
-        <button className={styles.info}>Read More</button>
+        <button className={`${styles.info} ${styles.button}`}>Read More</button>
       </div>
     </div>
   );
