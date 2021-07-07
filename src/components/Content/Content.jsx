@@ -7,7 +7,7 @@ function Content() {
     <React.Fragment>
       <div className={styles.container}>
         <Card title="Tic Tac Toe" />
-        <Card title="Card Matching" />
+        <Card title="Matching Cards" />
         <Card title="Rock Paper Scissors" />
         <Card title="Hangman" />
         <Card title="Trivia Quiz" />

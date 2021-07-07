@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import TicTacToe from "../pages/TicTacToe";
-import CardMatching from "../pages/CardMatching";
+import MatchingCards from "../pages/MatchingCards";
 import RockPaperScissors from "../pages/RockPaperScissors";
 import Hangman from "../pages/Hangman";
 import TriviaQuiz from "../pages/TriviaQuiz";
@@ -15,7 +15,7 @@ function Routes() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/tic-tac-toe" exact component={TicTacToe} />
-          <Route path="/card-matching" exact component={CardMatching} />
+          <Route path="/matching-cards" exact component={MatchingCards} />
           <Route
             path="/rock-paper-scissors"
             exact
