@@ -1,10 +1,12 @@
 import React from "react";
-import ComingSoon from "../components/ComingSoon/ComingSoon";
+import Navbar from "../components/Navbar/Navbar";
+import Container from "../rock-paper-scissors/Container/Container";
 
 function RockPaperScissors() {
   return (
     <React.Fragment>
-      <ComingSoon />
+      <Navbar logo="ROCK PAPER SCISSORS" />
+      <Container />
     </React.Fragment>
   );
 }
