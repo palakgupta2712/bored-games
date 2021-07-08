@@ -1,10 +1,12 @@
 import React from "react";
-import ComingSoon from "../components/ComingSoon/ComingSoon";
+import Navbar from "../components/Navbar/Navbar";
+import Container from "../trivia-quiz/Container/Container";
 
 function TriviaQuiz() {
   return (
     <React.Fragment>
-      <ComingSoon />
+      <Navbar logo="TRIVIA QUIZ" />
+      <Container />
     </React.Fragment>
   );
 }
