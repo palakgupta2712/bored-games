@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from "../Container/Container.module.css";
 import Score from "../Score/Score";
 import PlayAgainButton from "../PlayAgainButton/PlayAgainButton";
-import rock from "./icon-rock.svg";
 import {
   FaRegHandPaper,
   FaRegHandScissors,
