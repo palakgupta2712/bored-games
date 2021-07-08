@@ -9,9 +9,9 @@ import {
 } from "react-icons/fa";
 
 function Container() {
-  const [userChoice, setUserChoice] = useState(null);
+  const [userChoice, setUserChoice] = useState();
   const [computerChoice, setComputerChoice] = useState(null);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState();
   const [score, setScore] = useState(0);
   const [open, setOpen] = useState(false);
   const choices = ["rock", "paper", "scissors"];
@@ -22,20 +22,16 @@ function Container() {
       (userChoice === "paper" && computerChoice === "rock") ||
       (userChoice === "scissors" && computerChoice === "paper")
     ) {
-      setResult("HUMAN WINS.");
+      setResult("HUMAN WINS ✨");
       setScore((score) => score + 1);
     } else if (
       (computerChoice === "rock" && userChoice === "scissors") ||
       (computerChoice === "paper" && userChoice === "rock") ||
       (computerChoice === "scissors" && userChoice === "paper")
     ) {
-      setResult("Computer Wins");
-    } else if (
-      userChoice === computerChoice &&
-      userChoice === !null &&
-      computerChoice === !null
-    ) {
-      setResult("It's a tie");
+      setResult("COMPUTER WINS 🥺");
+    } else if (userChoice === computerChoice) {
+      setResult("IT'S A TIE 🤝");
     }
   }, [computerChoice, userChoice]);
 
@@ -44,7 +40,7 @@ function Container() {
     setUserChoice(value);
     setComputerChoice();
     setResult();
-    setTimeout(() => getComputerChoice(), 1000);
+    setTimeout(() => getComputerChoice(), 200);
   }
 
   function getComputerChoice() {
@@ -56,7 +52,7 @@ function Container() {
     setOpen(false);
     setResult();
     setComputerChoice(null);
-    setUserChoice(null);
+    setUserChoice();
     setScore(0);
   }
   return (
