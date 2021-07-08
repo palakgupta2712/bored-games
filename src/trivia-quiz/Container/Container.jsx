@@ -20,6 +20,11 @@ function Container() {
     }
     console.log(isCorrect);
   }
+  function playAgain() {
+    setQuestionCount(0);
+    setScore(0);
+    setScoreCard(false);
+  }
   return (
     <React.Fragment>
       <div className={styles.root}>
@@ -45,6 +50,13 @@ function Container() {
               ))}
             </div>
           </div>
+        )}
+      </div>
+      <div className={styles.playAgainDiv}>
+        {scoreCard && (
+          <button className={styles.playAgain} onClick={playAgain}>
+            Play Again
+          </button>
         )}
       </div>
     </React.Fragment>

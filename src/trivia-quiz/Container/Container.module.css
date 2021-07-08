@@ -38,6 +38,25 @@
 .options:hover {
   background-color: #333;
 }
+.playAgainDiv {
+  text-align: center;
+}
+.playAgain {
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid #323232;
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 18px;
+  background-color: #212121;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.playAgain:hover {
+  background-color: #333;
+}
+/* media queries */
 @media only screen and (max-width: 600px) {
   .root {
     font-size: 16px;
