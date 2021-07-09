@@ -1,6 +1,6 @@
 .card {
   height: 110px;
-  width: 200px;
+  width: 250px;
   background-color: #141414;
   margin: auto;
   border-radius: 10px 10px 0px 0px;
@@ -8,16 +8,16 @@
 
 .title {
   height: 30px;
-  width: 200px;
+  width: 250px;
   background-color: #141414;
   margin: auto;
   padding-left: 10px;
-  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 1px;
 }
 
 .action {
   height: 30px;
-  width: 200px;
+  width: 250px;
   background-color: #141414;
   margin: auto;
   box-shadow: 2px 0px 10px 2px #303030;
