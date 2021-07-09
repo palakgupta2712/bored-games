@@ -9,6 +9,7 @@ function Content() {
         <Card title="Tic Tac Toe" />
         <Card title="Rock Paper Scissors" />
         <Card title="Trivia Quiz" />
+        <Card title="Maths Wizard" />
         <Card title="Matching Cards" />
         <Card title="Hangman" />
       </div>

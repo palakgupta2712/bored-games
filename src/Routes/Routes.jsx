@@ -7,6 +7,7 @@ import RockPaperScissors from "../pages/RockPaperScissors";
 import Hangman from "../pages/Hangman";
 import TriviaQuiz from "../pages/TriviaQuiz";
 import FloatingButton from "../components/FloatingButton/FloatingButton";
+import MathsWizard from "../pages/MathsWizard";
 
 function Routes() {
   return (
@@ -23,6 +24,7 @@ function Routes() {
           />
           <Route path="/hangman" exact component={Hangman} />
           <Route path="/trivia-quiz" exact component={TriviaQuiz} />
+          <Route path="/maths-wizard" exact component={MathsWizard} />
         </Switch>
         <FloatingButton />
       </BrowserRouter>
