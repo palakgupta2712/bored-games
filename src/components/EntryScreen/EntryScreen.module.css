@@ -1,6 +1,6 @@
 .root {
   height: 100vh;
-  background-color: aquamarine;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +11,8 @@
   font-size: 72px;
   animation-name: example;
   animation-duration: 5s;
-  transition: ease-in 450ms;
-  background-color: yellow;
+  transition: ease-in 350ms;
+  background-color: #c51935;
   padding: 10px;
 }
 
@@ -22,7 +22,10 @@
     background-color: transparent;
   }
   to {
-    background-color: yellow;
+    background-color: c51935;
+    box-shadow: 10px 10px 2px 0px rgba(197, 25, 53, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(197, 25, 53, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(197, 25, 53, 0.75);
   }
 }
 
