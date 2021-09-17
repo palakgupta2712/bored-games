@@ -3,13 +3,14 @@ import EntryScreen from "../components/EntryScreen/EntryScreen";
 import Navbar from "../components/Navbar/Navbar";
 import Content from "../components/Content/Content";
 import Footer from "../components/Footer/Footer";
+import { Redirect } from "react-router";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
   return (
@@ -17,9 +18,7 @@ function Home() {
       {isLoading && <EntryScreen />}
       {!isLoading && (
         <>
-          <Navbar logo="BORED." />
-          <Content />
-          <Footer />
+          <Redirect to="/home" />
         </>
       )}
     </React.Fragment>

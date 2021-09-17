@@ -8,14 +8,14 @@ function Container() {
   return (
     <React.Fragment>
       <div className={styles.root}>
-        <button
+        {/* <button
           className={styles.btn}
           onClick={() => {
             setGameType("Computer");
           }}
         >
           vs. Computer
-        </button>
+        </button> */}
         <button
           className={styles.btn}
           onClick={() => {
@@ -25,7 +25,7 @@ function Container() {
           Two Player
         </button>
       </div>
-      {gameType === "Computer" && "Computer Game"}
+      {/* {gameType === "Computer" && "Computer Game"} */}
       {gameType === "TwoPlayer" && <Game />}
     </React.Fragment>
   );

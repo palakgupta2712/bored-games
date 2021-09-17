@@ -8,6 +8,7 @@ import Hangman from "../pages/Hangman";
 import TriviaQuiz from "../pages/TriviaQuiz";
 import FloatingButton from "../components/FloatingButton/FloatingButton";
 import MathsWizard from "../pages/MathsWizard";
+import LandingPage from "../pages/LandingPage";
 
 function Routes() {
   return (
@@ -15,6 +16,7 @@ function Routes() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={HomePage} />
+          <Route path="/home" exact component={LandingPage} />
           <Route path="/tic-tac-toe" exact component={TicTacToe} />
           <Route path="/matching-cards" exact component={MatchingCards} />
           <Route

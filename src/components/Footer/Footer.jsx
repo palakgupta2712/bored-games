@@ -7,12 +7,14 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <a href="https://github.com/palakgupta2712" target="_blank">
-        <IoLogoGithub style={{ color: "white" }} />
+        <IoLogoGithub className={styles.links} />
       </a>
       <a href="https://www.linkedin.com/in/palakgupta2712/" target="_blank">
-        <IoLogoLinkedin style={{ color: "white" }} />
+        <IoLogoLinkedin className={styles.links} />
       </a>
-      <IoIosLink style={{ color: "white" }} />
+      <a href="https://palakgupta.netlify.com/" target="_blank">
+        <IoIosLink className={styles.links} />
+      </a>
     </div>
   );
 }

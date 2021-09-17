@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function FloatingButton() {
   return (
-    <Link className={styles.link} to="/">
+    <Link className={styles.link} to="/home">
       <div className={styles.float}>
         <p className={styles.text}>BORED.</p>
       </div>
