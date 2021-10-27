@@ -2,11 +2,13 @@ import React from "react";
 import styles from "./Card.module.css";
 import { useHistory } from "react-router-dom";
 
-function Card({ title }) {
+function Card({ title, image }) {
   let history = useHistory();
   return (
     <div>
-      <div className={styles.card}></div>
+      <div className={styles.card}>
+        <img className={styles.image} src={image} height="auto" width="200px" />
+      </div>
       <div className={styles.title}>{title}</div>
       <div className={styles.action}>
         <button

@@ -5,7 +5,7 @@ import Container from "../tic-tac-toe/Container/Container";
 function TicTacToe() {
   return (
     <>
-      <Navbar logo="TIC-TAC-TOE" />
+      <Navbar logo="TIC-TAC-TOE"  />
       <Container />
     </>
   );
