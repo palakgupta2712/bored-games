@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Content.module.css";
 import Card from "../Card/Card";
+import imgUrl from "../../../img/pic1.png";
 
 function Content() {
   return (
     <React.Fragment>
       <div className={styles.container}>
-        <Card title="Rock Paper Scissors" image="./img/pic1.png" />
+        <Card title="Rock Paper Scissors" image={imgUrl} />
         <Card title="Tic Tac Toe" image="./img/pic2.png" />
         <Card title="Trivia Quiz" image="./img/pic3.png" />
         <Card title="Maths Wizard" image="./img/pic4.png" />
