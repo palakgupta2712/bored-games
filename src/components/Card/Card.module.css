@@ -18,6 +18,8 @@
   margin: auto;
   padding-left: 10px;
   letter-spacing: 1px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .action {
